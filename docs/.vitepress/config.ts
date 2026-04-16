@@ -61,6 +61,7 @@ export default defineConfig({
           { text: '选课', link: '/guide/courses' },
           { text: '考试', link: '/guide/exams' },
           { text: '实验室篇', link: '/guide/labs' },
+          { text: '奖学金', link: '/guide/scholarship' },
         ]
       },
       {
@@ -75,7 +76,6 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: '生活篇', link: '/guide/life' },
-          { text: '奖学金', link: '/guide/scholarship' },
         ]
       },
       {
