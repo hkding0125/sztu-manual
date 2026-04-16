@@ -1,68 +1,229 @@
 /**
- * 自定义主题变量：科技蓝 + 极客黑
+ * Custom Theme: Tech Blue + Geek Black
+ * For SZTU College of Future Technology Survival Guide
  */
+
+/* ===== Brand Colors ===== */
 :root {
   --vp-c-brand-1: #3b82f6;
   --vp-c-brand-2: #2563eb;
   --vp-c-brand-3: #60a5fa;
   --vp-c-brand-soft: rgba(59, 130, 246, 0.14);
-  
+
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: linear-gradient(135deg, #3b82f6 0%, #a855f7 100%);
+  --vp-home-hero-name-background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #a855f7 100%);
+
+  --vp-c-tip-1: var(--vp-c-brand-1);
+  --vp-c-tip-soft: var(--vp-c-brand-soft);
 }
 
-/* 首页背景渐变效果 */
+.dark {
+  --vp-c-brand-1: #60a5fa;
+  --vp-c-brand-2: #3b82f6;
+  --vp-c-brand-3: #93bbfd;
+  --vp-c-brand-soft: rgba(96, 165, 250, 0.16);
+
+  --vp-home-hero-name-background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 50%, #c084fc 100%);
+}
+
+/* ===== Global ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===== Home Page ===== */
 .VPHome {
-  background-image: radial-gradient(circle at 50% -20%, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
+  background-image: radial-gradient(
+    ellipse 80% 50% at 50% -20%,
+    rgba(59, 130, 246, 0.08) 0%,
+    transparent 60%
+  );
 }
 
-/* 标题渐变 */
-.VPHomeHero .name {
-  background: linear-gradient(135deg, #3b82f6 0%, #a855f7 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
+.dark .VPHome {
+  background-image: radial-gradient(
+    ellipse 80% 50% at 50% -20%,
+    rgba(96, 165, 250, 0.06) 0%,
+    transparent 60%
+  );
+}
+
+/* Hero title gradient */
+.VPHero .name {
   font-weight: 800;
+  letter-spacing: -0.02em;
 }
 
-/* 特色卡片美化 */
+.VPHero .text {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.VPHero .tagline {
+  max-width: 560px;
+  line-height: 1.6;
+}
+
+/* ===== Feature Cards ===== */
 .VPFeature {
   border: 1px solid var(--vp-c-bg-soft) !important;
   background-color: var(--vp-c-bg-soft) !important;
-  transition: all 0.3s ease;
+  border-radius: 12px !important;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .VPFeature:hover {
   border-color: var(--vp-c-brand-1) !important;
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px -10px rgba(59, 130, 246, 0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px -8px rgba(59, 130, 246, 0.2);
 }
 
-/* 按钮美化 */
+.dark .VPFeature:hover {
+  box-shadow: 0 12px 24px -8px rgba(96, 165, 250, 0.15);
+}
+
+.VPFeature .icon {
+  font-size: 28px;
+}
+
+.VPFeature .title {
+  font-weight: 600;
+}
+
+/* ===== Buttons ===== */
 .VPButton.brand {
   border-color: var(--vp-c-brand-1) !important;
   background-color: var(--vp-c-brand-1) !important;
-  box-shadow: 0 4px 14px 0 rgba(59, 130, 246, 0.39);
+  box-shadow: 0 4px 14px 0 rgba(59, 130, 246, 0.3);
+  transition: all 0.25s ease;
 }
 
 .VPButton.brand:hover {
   background-color: var(--vp-c-brand-2) !important;
+  box-shadow: 0 6px 20px 0 rgba(59, 130, 246, 0.4);
+  transform: translateY(-1px);
 }
 
-/* 文章排版优化 */
-.vp-doc h1, .vp-doc h2, .vp-doc h3 {
+.VPButton.alt {
+  transition: all 0.25s ease;
+}
+
+.VPButton.alt:hover {
+  transform: translateY(-1px);
+}
+
+/* ===== Article Typography ===== */
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3 {
   letter-spacing: -0.02em;
 }
 
-.vp-doc p, .vp-doc li {
+.vp-doc h1 {
+  font-weight: 800;
+  font-size: 28px;
+}
+
+.vp-doc h2 {
+  padding-top: 36px;
+  margin-top: 36px;
+}
+
+.vp-doc p,
+.vp-doc li {
   line-height: 1.8;
 }
 
-/* 引用块美化 */
+/* ===== Blockquote ===== */
 .vp-doc blockquote {
-  border-left-color: var(--vp-c-brand-1);
+  border-left: 3px solid var(--vp-c-brand-1);
   background-color: var(--vp-c-bg-soft);
   padding: 16px 20px;
   border-radius: 0 8px 8px 0;
   font-style: italic;
   color: var(--vp-c-text-2);
+  margin: 24px 0;
+}
+
+.vp-doc blockquote p {
+  margin: 0;
+}
+
+/* ===== Code Blocks ===== */
+.vp-doc div[class*='language-'] {
+  border-radius: 8px;
+}
+
+.vp-doc :not(pre) > code {
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 0.9em;
+  color: var(--vp-c-brand-1);
+  background-color: var(--vp-c-brand-soft);
+}
+
+/* ===== Sidebar ===== */
+.VPSidebar .group + .group {
+  padding-top: 12px;
+}
+
+.VPSidebarItem .text {
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+/* ===== Custom Scrollbar ===== */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--vp-c-divider);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--vp-c-text-3);
+}
+
+/* ===== Footer ===== */
+.VPFooter .message,
+.VPFooter .copyright {
+  font-size: 13px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .VPHero .tagline {
+    font-size: 14px;
+  }
+
+  .VPFeature {
+    margin: 4px 0;
+  }
+}
+
+/* ===== Selection Color ===== */
+::selection {
+  background-color: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+}
+
+/* ===== Outline (TOC) ===== */
+.VPDocOutlineItem a {
+  transition: color 0.2s ease;
+}
+
+/* ===== Custom Container Tip ===== */
+.vp-doc .custom-block.tip {
+  border-color: var(--vp-c-brand-1);
+}
+
+.vp-doc .custom-block.tip .custom-block-title {
+  color: var(--vp-c-brand-1);
 }

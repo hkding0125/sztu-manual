@@ -2,22 +2,34 @@
 layout: home
 
 hero:
-  name: "未来技术学院生存手册"
-  text: "科学家素质、企业家头脑、工程师能力"
-  tagline: 既然进了未来学院，就别想平庸地混日子。
+  name: "未来技术学院"
+  text: "生存手册"
+  tagline: 一份来自坪山前辈们的非官方田野调查报告。
   actions:
     - theme: brand
-      text: 开启地狱模式
+      text: 开始阅读 →
       link: /guide/intro
     - theme: alt
-      text: 在 GitHub 上吐槽
+      text: GitHub
       link: https://github.com/hkding0125/sztu-manual
 
 features:
-  - title: 真实的新才班
-    details: 全英文授课、二次选拔、项目制教学（PBL），这里没有水课，只有熬不完的夜。
-  - title: 院士领衔的真相
-    details: 院长刘清侠院士就在你身边，但这并不意味着你能自动变强。
-  - title: 独立且硬核
-    details: 我们不代表官方，只代表在这块“试验田”里摸爬滚打过的真实体验。
+  - icon: 📖
+    title: 学院到底什么样
+    details: 加拿大工程院院士领衔、三大研究中心、新才特色班——听起来很厉害，实际体验如何？这里有一手信息。
+  - icon: 🧠
+    title: 几个值得早点想清楚的问题
+    details: 大学不是高中的延续。怎么利用资源、怎么规划方向、怎么不浪费这四年，越早想越好。
+  - icon: 🔬
+    title: 实验室生存指南
+    details: 怎么找老师、怎么选方向、进组之后怎么生存——几条过来人的经验。
+  - icon: 🚀
+    title: 毕业以后去哪儿
+    details: 考研、留学、就业——每条路都有人走通了，但每条路也有各自的坑。
+  - icon: 🏙️
+    title: 坪山生活图鉴
+    details: 地铁怎么坐、周末去哪玩、宿舍生活怎么过——这些小事决定你四年的生活质量。
+  - icon: 🤝
+    title: 一起来写这本手册
+    details: 这不是一个人的作品。你有经验、有补充、有更正，都欢迎 PR 过来。
 ---
