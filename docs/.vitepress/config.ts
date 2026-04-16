@@ -75,6 +75,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: '生活篇', link: '/guide/life' },
+          { text: '奖学金', link: '/guide/scholarship' },
         ]
       },
       {

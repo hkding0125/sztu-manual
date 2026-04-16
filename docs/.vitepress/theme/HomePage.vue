@@ -97,6 +97,11 @@ onMounted(async () => {
           <span class="toc-chapter">生活篇</span>
           <span class="toc-desc">交通、食堂、宿舍</span>
         </a>
+
+        <a href="/sztu-manual/guide/scholarship" class="toc-item">
+          <span class="toc-chapter">奖学金</span>
+          <span class="toc-desc">单项奖、校长奖、校长特别奖</span>
+        </a>
       </nav>
 
       <footer class="home-footer">
