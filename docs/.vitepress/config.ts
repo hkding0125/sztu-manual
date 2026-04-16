@@ -28,7 +28,6 @@ export default defineConfig({
           { text: '深造篇', link: '/guide/career' },
         ]
       },
-      { text: '学院官网', link: 'https://cft.sztu.edu.cn/' },
     ],
 
     sidebar: [
