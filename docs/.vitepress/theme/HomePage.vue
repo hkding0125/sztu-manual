@@ -3,7 +3,7 @@
     <div class="home-content">
       <header class="home-header">
         <h1 class="home-title">未来技术学院生存手册</h1>
-        <p class="home-subtitle">深圳技术大学 · 非官方</p>
+        <p class="home-subtitle">非官方 · 由学生编写和维护</p>
       </header>
 
       <section class="home-intro">
