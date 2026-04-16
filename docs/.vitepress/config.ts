@@ -4,7 +4,7 @@ export default defineConfig({
   title: "深技大生存手册",
   description: "深圳技术大学非官方生存指南",
   lang: 'zh-CN',
-  base: '/manual/', // 如果你的仓库名是 manual，这里填 /manual/
+  base: '/sztu-manual/', // 修正为您的仓库名
   themeConfig: {
     logo: '/logo.png',
     nav: [
