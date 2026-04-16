@@ -1,9 +1,40 @@
+<script setup>
+import { ref, onMounted } from 'vue'
+
+const contributors = ref([])
+
+onMounted(async () => {
+  try {
+    const res = await fetch('https://api.github.com/repos/hkding0125/sztu-manual/contributors')
+    if (res.ok) {
+      const data = await res.json()
+      contributors.value = data.filter(u => u.type === 'User')
+    }
+  } catch (e) {
+    // fail silently
+  }
+})
+</script>
+
 <template>
   <div class="home-page">
     <div class="home-content">
       <header class="home-header">
         <h1 class="home-title">未来技术学院生存手册</h1>
-        <p class="home-subtitle">非官方 · 由学生编写和维护</p>
+        <div class="home-contributors" v-if="contributors.length">
+          <span class="contributors-label">非官方 ·</span>
+          <a
+            v-for="c in contributors"
+            :key="c.login"
+            :href="c.html_url"
+            target="_blank"
+            class="contributor-link"
+            :title="c.login"
+          >
+            <img :src="c.avatar_url + '&s=64'" :alt="c.login" class="contributor-avatar" />
+          </a>
+        </div>
+        <p v-else class="home-subtitle">非官方</p>
       </header>
 
       <section class="home-intro">

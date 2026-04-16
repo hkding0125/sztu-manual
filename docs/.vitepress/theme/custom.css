@@ -256,6 +256,35 @@ html {
   margin-top: 8px;
 }
 
+.home-contributors {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.contributors-label {
+  font-size: 15px;
+  color: var(--vp-c-text-3);
+}
+
+.contributor-link {
+  display: inline-block;
+  line-height: 0;
+}
+
+.contributor-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.contributor-avatar:hover {
+  transform: scale(1.15);
+}
+
 .home-intro {
   margin-bottom: 48px;
 }
