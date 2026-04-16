@@ -18,41 +18,63 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       {
-        text: '生存指南',
+        text: '立志篇',
         items: [
           { text: '序言', link: '/guide/intro' },
+          { text: '你的时间值多少钱', link: '/guide/time' },
           { text: '思维篇', link: '/guide/thinking' },
+        ]
+      },
+      {
+        text: '生存技巧',
+        items: [
           { text: '学术篇', link: '/guide/academic' },
+          { text: '选课', link: '/guide/courses' },
+          { text: '考试', link: '/guide/exams' },
           { text: '实验室篇', link: '/guide/labs' },
-          { text: '生活篇', link: '/guide/life' },
+        ]
+      },
+      {
+        text: '出路',
+        items: [
           { text: '深造篇', link: '/guide/career' },
+          { text: '生活篇', link: '/guide/life' },
         ]
       },
     ],
 
     sidebar: [
       {
-        text: '开始阅读',
+        text: '立志篇',
         collapsed: false,
         items: [
           { text: '序言', link: '/guide/intro' },
+          { text: '你的时间值多少钱', link: '/guide/time' },
           { text: '思维篇', link: '/guide/thinking' },
         ]
       },
       {
-        text: '学院生活',
+        text: '生存技巧',
         collapsed: false,
         items: [
           { text: '学术篇', link: '/guide/academic' },
+          { text: '选课', link: '/guide/courses' },
+          { text: '考试', link: '/guide/exams' },
           { text: '实验室篇', link: '/guide/labs' },
-          { text: '生活篇', link: '/guide/life' },
         ]
       },
       {
-        text: '未来去向',
+        text: '出路',
         collapsed: false,
         items: [
           { text: '深造篇', link: '/guide/career' },
+        ]
+      },
+      {
+        text: '日常',
+        collapsed: false,
+        items: [
+          { text: '生活篇', link: '/guide/life' },
         ]
       },
       {

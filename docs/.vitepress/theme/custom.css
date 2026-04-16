@@ -310,6 +310,10 @@ html {
   margin: 0 0 16px;
 }
 
+.toc-heading-gap {
+  margin-top: 32px;
+}
+
 .toc-item {
   display: block;
   padding: 16px 0;

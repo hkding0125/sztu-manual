@@ -47,36 +47,55 @@ onMounted(async () => {
       </section>
 
       <nav class="home-toc">
-        <h2 class="toc-heading">目录</h2>
+        <h2 class="toc-heading">立志篇</h2>
 
         <a href="/sztu-manual/guide/intro" class="toc-item">
           <span class="toc-chapter">序言</span>
-          <span class="toc-desc">关于这本手册：为什么写、怎么用</span>
+          <span class="toc-desc">四年怎么过，没有人教你</span>
+        </a>
+
+        <a href="/sztu-manual/guide/time" class="toc-item">
+          <span class="toc-chapter">你的时间值多少钱</span>
+          <span class="toc-desc">一万小时，你打算怎么花</span>
         </a>
 
         <a href="/sztu-manual/guide/thinking" class="toc-item">
           <span class="toc-chapter">思维篇</span>
-          <span class="toc-desc">绩点迷思、信息差与方向选择</span>
+          <span class="toc-desc">绩点、信息差、方向</span>
         </a>
+
+        <h2 class="toc-heading toc-heading-gap">生存技巧</h2>
 
         <a href="/sztu-manual/guide/academic" class="toc-item">
           <span class="toc-chapter">学术篇</span>
-          <span class="toc-desc">授课语言、培养模式、研究方向与 X-Talent</span>
+          <span class="toc-desc">授课语言、PBL、材料方向、X-Talent</span>
+        </a>
+
+        <a href="/sztu-manual/guide/courses" class="toc-item">
+          <span class="toc-chapter">选课</span>
+          <span class="toc-desc">选老师比选课重要</span>
+        </a>
+
+        <a href="/sztu-manual/guide/exams" class="toc-item">
+          <span class="toc-chapter">考试</span>
+          <span class="toc-desc">突击备考和考场策略</span>
         </a>
 
         <a href="/sztu-manual/guide/labs" class="toc-item">
           <span class="toc-chapter">实验室篇</span>
-          <span class="toc-desc">怎么找组、怎么选老师、进组之后怎么生存</span>
+          <span class="toc-desc">找组、选老师、进组之后</span>
+        </a>
+
+        <h2 class="toc-heading toc-heading-gap">出路</h2>
+
+        <a href="/sztu-manual/guide/career" class="toc-item">
+          <span class="toc-chapter">深造篇</span>
+          <span class="toc-desc">考研、留学、就业、考公</span>
         </a>
 
         <a href="/sztu-manual/guide/life" class="toc-item">
           <span class="toc-chapter">生活篇</span>
-          <span class="toc-desc">交通、食堂、宿舍与坪山日常</span>
-        </a>
-
-        <a href="/sztu-manual/guide/career" class="toc-item">
-          <span class="toc-chapter">深造篇</span>
-          <span class="toc-desc">考研、留学、X-Talent、就业与考公</span>
+          <span class="toc-desc">交通、食堂、宿舍</span>
         </a>
       </nav>
 
