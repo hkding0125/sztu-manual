@@ -227,3 +227,136 @@ html {
 .vp-doc .custom-block.tip .custom-block-title {
   color: var(--vp-c-brand-1);
 }
+
+/* ===== Custom Home Page ===== */
+.home-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 60px 24px 80px;
+}
+
+.home-header {
+  margin-bottom: 48px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+.home-title {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+  color: var(--vp-c-text-1);
+  margin: 0;
+}
+
+.home-subtitle {
+  font-size: 15px;
+  color: var(--vp-c-text-3);
+  margin-top: 8px;
+}
+
+.home-intro {
+  margin-bottom: 48px;
+}
+
+.home-intro p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--vp-c-text-2);
+  margin: 0 0 16px;
+}
+
+.home-intro p:last-child {
+  margin-bottom: 0;
+}
+
+/* TOC */
+.toc-heading {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--vp-c-text-3);
+  margin: 0 0 16px;
+}
+
+.toc-item {
+  display: block;
+  padding: 16px 0;
+  border-top: 1px solid var(--vp-c-divider);
+  text-decoration: none;
+  transition: padding-left 0.2s ease;
+}
+
+.toc-item:last-child {
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+.toc-item:hover {
+  padding-left: 8px;
+}
+
+.toc-chapter {
+  display: block;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+  margin-bottom: 4px;
+}
+
+.toc-item:hover .toc-chapter {
+  color: var(--vp-c-brand-1);
+}
+
+.toc-desc {
+  display: block;
+  font-size: 14px;
+  color: var(--vp-c-text-3);
+}
+
+.home-footer {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid var(--vp-c-divider);
+}
+
+.home-footer p {
+  font-size: 14px;
+  color: var(--vp-c-text-3);
+  margin: 0;
+}
+
+.home-footer a {
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+}
+
+.home-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Hide sidebar on home page */
+.home-page + .VPDocAside,
+.home-content + .VPDocAside {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .home-page {
+    padding: 40px 20px 60px;
+  }
+
+  .home-title {
+    font-size: 26px;
+  }
+
+  .home-header {
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+  }
+
+  .home-intro {
+    margin-bottom: 32px;
+  }
+}
