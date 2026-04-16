@@ -39,8 +39,8 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/sztu-manual/manual' }
     ],
     footer: {
-      message: '基于 CC BY-NC-SA 4.0 许可发布',
-      copyright: 'Copyright © 2024-present SZTU Manual Team'
+      message: '基于 MIT 许可发布',
+      copyright: 'Copyright © 2026-present SZTU Manual Team'
     }
   }
 })
