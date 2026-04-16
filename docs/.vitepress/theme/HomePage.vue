@@ -86,6 +86,11 @@ onMounted(async () => {
           <span class="toc-desc">找组、选老师、进组之后</span>
         </a>
 
+        <a href="/sztu-manual/guide/teachers" class="toc-item">
+          <span class="toc-chapter">导师一览</span>
+          <span class="toc-desc">三个中心 23 位老师，附匿名评价入口</span>
+        </a>
+
         <h2 class="toc-heading toc-heading-gap">出路</h2>
 
         <a href="/sztu-manual/guide/career" class="toc-item">

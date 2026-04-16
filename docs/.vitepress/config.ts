@@ -32,6 +32,7 @@ export default defineConfig({
           { text: '选课', link: '/guide/courses' },
           { text: '考试', link: '/guide/exams' },
           { text: '实验室篇', link: '/guide/labs' },
+          { text: '导师一览', link: '/guide/teachers' },
         ]
       },
       {
@@ -61,6 +62,7 @@ export default defineConfig({
           { text: '选课', link: '/guide/courses' },
           { text: '考试', link: '/guide/exams' },
           { text: '实验室篇', link: '/guide/labs' },
+          { text: '导师一览', link: '/guide/teachers' },
         ]
       },
       {
