@@ -8,11 +8,11 @@ export default defineConfig({
   lastUpdated: true,
 
   head: [
-    ['link', { rel: 'icon', type: 'image/png', href: '/sztu-manual/logo.png' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/sztu-manual/logo.svg' }],
   ],
 
   themeConfig: {
-    logo: '/logo.png',
+    logo: '/logo.svg',
     siteTitle: '未来生存手册',
 
     nav: [
