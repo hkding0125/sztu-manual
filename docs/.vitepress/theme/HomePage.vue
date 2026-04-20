@@ -42,12 +42,12 @@ onMounted(async () => {
           深技大太新了。新到很多信息还没来得及变成"传统"，新到你想找个学长问点事情，发现上面根本没几届人。
         </p>
         <p>
-          这本手册记的是官网上找不到的东西：怎么选方向、怎么找实验室、毕业往哪走、在坪山怎么生活。写错了的地方欢迎来改。
+          这本手册记的是官网上找不到的东西：怎么判断方向、怎么找实验室、毕业往哪走、在坪山怎么把日子过明白。写错了的地方欢迎来改。
         </p>
       </section>
 
       <nav class="home-toc">
-        <h2 class="toc-heading">立志篇</h2>
+        <h2 class="toc-heading">开局判断</h2>
 
         <a href="/sztu-manual/guide/intro" class="toc-item">
           <span class="toc-chapter">序言</span>
@@ -64,7 +64,7 @@ onMounted(async () => {
           <span class="toc-desc">绩点、信息差、方向</span>
         </a>
 
-        <h2 class="toc-heading toc-heading-gap">生存技巧</h2>
+        <h2 class="toc-heading toc-heading-gap">校内生存</h2>
 
         <a href="/sztu-manual/guide/academic" class="toc-item">
           <span class="toc-chapter">学术篇</span>
@@ -73,12 +73,12 @@ onMounted(async () => {
 
         <a href="/sztu-manual/guide/courses" class="toc-item">
           <span class="toc-chapter">选课</span>
-          <span class="toc-desc">选老师比选课重要</span>
+          <span class="toc-desc">先定目标，再决定怎么排雷</span>
         </a>
 
         <a href="/sztu-manual/guide/exams" class="toc-item">
           <span class="toc-chapter">考试</span>
-          <span class="toc-desc">突击备考和考场策略</span>
+          <span class="toc-desc">救火顺序、复习策略、止损方法</span>
         </a>
 
         <a href="/sztu-manual/guide/labs" class="toc-item">
@@ -86,11 +86,9 @@ onMounted(async () => {
           <span class="toc-desc">找组、选老师、进组之后</span>
         </a>
 
-        <h2 class="toc-heading toc-heading-gap">出路</h2>
-
-        <a href="/sztu-manual/guide/career" class="toc-item">
-          <span class="toc-chapter">深造篇</span>
-          <span class="toc-desc">考研、留学、就业、考公</span>
+        <a href="/sztu-manual/guide/scholarship" class="toc-item">
+          <span class="toc-chapter">奖学金</span>
+          <span class="toc-desc">单项奖、校长奖、校长特别奖</span>
         </a>
 
         <a href="/sztu-manual/guide/life" class="toc-item">
@@ -98,9 +96,18 @@ onMounted(async () => {
           <span class="toc-desc">交通、食堂、宿舍</span>
         </a>
 
-        <a href="/sztu-manual/guide/scholarship" class="toc-item">
-          <span class="toc-chapter">奖学金</span>
-          <span class="toc-desc">单项奖、校长奖、校长特别奖</span>
+        <h2 class="toc-heading toc-heading-gap">毕业去向</h2>
+
+        <a href="/sztu-manual/guide/career" class="toc-item">
+          <span class="toc-chapter">出路篇</span>
+          <span class="toc-desc">留学、读研、就业、考公怎么选</span>
+        </a>
+
+        <h2 class="toc-heading toc-heading-gap">关于</h2>
+
+        <a href="/sztu-manual/guide/contributing" class="toc-item">
+          <span class="toc-chapter">参与贡献</span>
+          <span class="toc-desc">补充经验、纠错、继续把它写下去</span>
         </a>
       </nav>
 

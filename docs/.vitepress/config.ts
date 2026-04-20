@@ -18,7 +18,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       {
-        text: '立志篇',
+        text: '开局判断',
         items: [
           { text: '序言', link: '/guide/intro' },
           { text: '你的时间值多少钱', link: '/guide/time' },
@@ -26,26 +26,28 @@ export default defineConfig({
         ]
       },
       {
-        text: '生存技巧',
+        text: '校内生存',
         items: [
           { text: '学术篇', link: '/guide/academic' },
           { text: '选课', link: '/guide/courses' },
           { text: '考试', link: '/guide/exams' },
           { text: '实验室篇', link: '/guide/labs' },
-        ]
-      },
-      {
-        text: '出路',
-        items: [
-          { text: '深造篇', link: '/guide/career' },
+          { text: '奖学金', link: '/guide/scholarship' },
           { text: '生活篇', link: '/guide/life' },
         ]
       },
+      {
+        text: '毕业去向',
+        items: [
+          { text: '出路篇', link: '/guide/career' },
+        ]
+      },
+      { text: '关于', link: '/guide/contributing' },
     ],
 
     sidebar: [
       {
-        text: '立志篇',
+        text: '开局判断',
         collapsed: false,
         items: [
           { text: '序言', link: '/guide/intro' },
@@ -54,7 +56,7 @@ export default defineConfig({
         ]
       },
       {
-        text: '生存技巧',
+        text: '校内生存',
         collapsed: false,
         items: [
           { text: '学术篇', link: '/guide/academic' },
@@ -62,20 +64,14 @@ export default defineConfig({
           { text: '考试', link: '/guide/exams' },
           { text: '实验室篇', link: '/guide/labs' },
           { text: '奖学金', link: '/guide/scholarship' },
-        ]
-      },
-      {
-        text: '出路',
-        collapsed: false,
-        items: [
-          { text: '深造篇', link: '/guide/career' },
-        ]
-      },
-      {
-        text: '日常',
-        collapsed: false,
-        items: [
           { text: '生活篇', link: '/guide/life' },
+        ]
+      },
+      {
+        text: '毕业去向',
+        collapsed: false,
+        items: [
+          { text: '出路篇', link: '/guide/career' },
         ]
       },
       {
