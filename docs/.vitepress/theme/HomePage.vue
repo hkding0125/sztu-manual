@@ -39,10 +39,10 @@ onMounted(async () => {
 
       <section class="home-intro">
         <p>
-          深技大太新了。新到很多信息还没来得及变成"传统"，新到你想找个学长问点事情，发现上面根本没几届人。
+          深技大太新了。新到很多信息还没来得及变成“传统”，新到你想找个学长问点事情，发现上面根本没几届人。
         </p>
         <p>
-          这本手册记的是官网上找不到的东西：怎么判断方向、怎么找实验室、毕业往哪走、在坪山怎么把日子过明白。写错了的地方欢迎来改。
+          这里写的不是官网上那套话，而是后来才会慢慢弄明白的东西：怎么判断方向、怎么找实验室、毕业往哪走、在坪山怎么把日子过明白。
         </p>
       </section>
 
@@ -113,7 +113,7 @@ onMounted(async () => {
 
       <footer class="home-footer">
         <p>
-          这是一个<a href="https://github.com/hkding0125/sztu-manual" target="_blank">开源项目</a>。如果你有经验想分享、有信息想更正，欢迎提交 Pull Request。
+          这是一个<a href="https://github.com/hkding0125/sztu-manual" target="_blank">开源项目</a>。有经验想补、有信息想更正，就继续往里写。
         </p>
       </footer>
     </div>
